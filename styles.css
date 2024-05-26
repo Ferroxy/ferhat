@@ -24,7 +24,6 @@ body {
     font-size: 46px;
     perspective: 20em;
     perspective-origin: 50% calc(50% - 2em);
-    /* transform-style: preserve-3d; */
     overflow: hidden;
 }
 
@@ -61,7 +60,6 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     transform-origin: bottom;
-    /* z-index: 10; */
     transform: translateX(-50%) rotate(calc(var(--rotation) * 6deg));
 }
 
@@ -82,7 +80,6 @@ body {
     height: 43%;
     background-color: #ffffff;
     transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
-    /* visibility: hidden; */
 }
 
 .clock .repere {
@@ -147,8 +144,6 @@ body {
 .clock::after {
     content: "ferh@t";
     position: absolute;
-    /* color: #fad033; */
-    /* color: #000000; */
     background-color: #9152e3;
     z-index: 16;
     width: 40px;
@@ -157,98 +152,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    /* text-anchor: middle; */
-    /* transform-style: preserve-3d; */
-    /* border: 2px solid #4199e7; */
     font-size: .25em;
     text-align: center;
     font-weight: lighter;
     padding: 12px 0px;
     transform: translate(-50%, -50%);
-}
-
-.scene {
-    position: absolute;
-    transform-style: preserve-3d;
-    min-height: 100vh;
-    height: 100%;
-    display: grid;
-    place-items: center;
-}
-
-.box {
-    transform-style: preserve-3d;
-    position: relative;
-    width: 150px;
-    height: 150px;
-    /* background-color: green; */
-    animation: rotate 60s infinite linear;
-    /* transform: translateZ(30px); */
-
-}
-
-.side {
-    position: absolute;
-    inset: 0;
-    /* color: lightblue; */
-    /* color: lightsalmon; */
-    /* background-color: #00bcd4; */
-    /* background-color: #351de9af; */
-    opacity: .3;
-    font-size: 50px;
-    display: grid;
-    place-items: center;
-    border-radius: 5%;
-    box-shadow: 0 0 40px #000 inset;
-    /* background-size: 120%; */
-    background-size: 100%;
-    transform-style: preserve-3d;
-
-    &:nth-child(1) {
-        background-image: var(--imgLogo);
-        transform: translateZ(75px)
-    }
-
-
-
-    &:nth-child(2) {
-        background-image: var(--imgLogo);
-        transform: rotateY(180deg) translateZ(75px)
-    }
-
-
-
-    &:nth-child(3) {
-        background-image: var(--imgLogo);
-        transform: rotateY(270deg) translateZ(75px)
-    }
-
-
-
-    &:nth-child(4) {
-        background-image: var(--imgLogo);
-        transform: rotateY(90deg) translateZ(75px)
-    }
-
-
-
-    &:nth-child(5) {
-        background-image: var(--imgLogo);
-        transform: translateY(-75px) rotateX(90deg)
-    }
-
-
-
-    &:nth-child(6) {
-        background-image: var(--imgLogo);
-        transform: translateY(75px) rotateX(270deg)
-    }
-}
-
-@keyframes rotate {
-    to {
-        transform: rotateX(360deg) rotateY(360deg)
-    }
 }
 
 @keyframes pivoter {
