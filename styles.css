@@ -76,7 +76,7 @@ body {
 }
 
 .clock .hand.second {
-    width: 3px;
+    width: 2px;
     height: 45%;
     background-color: #ffffff;
     transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
