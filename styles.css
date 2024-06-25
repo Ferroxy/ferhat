@@ -64,14 +64,14 @@ body {
 }
 
 .clock .hand.hour {
-    width: 18px;
+    width: 20px;
     height: 30%;
     border: 3px solid #3b6982e6;
 }
 
 .clock .hand.minute {
     width: 16px;
-    height: 38%;
+    height: 41%;
     border: 3px solid #9b58e3;
 }
 
@@ -145,7 +145,7 @@ body {
 .clock::after {
     content: "ferh@t";
     position: absolute;
-    background-color: #9152e3;
+    background-color: #fff;
     z-index: 16;
     width: 40px;
     height: 40px;
